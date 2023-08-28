@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Traductor Morse</title>
+</head>
+
+<body class="d-flex justify-content-center align-items-center vh-100">
+
+    <div class="card text-center">
+
+        <h2 class="card-header text-white bg-dark text-center">Traductor Morse</h2>
+
+        <div class="card-body">
+            <input type="text" class="form-control mb-4" id="cadena" placeholder="Cadena de texto">
+            <input type="text" id="morse" class="form-control mb-4" placeholder="Codigo morse" disabled>
+            <input type="submit" class="btn btn-dark mb-4" id="mostrar" value="Entrar">
+
+            <table class="table">
+                <tr>
+                    <th>
+                        <p class="card-subtitle text-muted">Traducir de texto a morse</p>
+                    </th>
+                    <th>
+                        <p class="card-subtitle text-muted">Traducir de morse a texto</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="op1" checked>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="op2">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
